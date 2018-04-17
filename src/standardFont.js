@@ -12,7 +12,11 @@ class StandardFont {
     return {
       positions,
       stringIndices: positions.map((_, i) => i),
-      glyphs: encoded.map(g => ({ id: g, _font: this.src })),
+      glyphs: encoded.map((g, i) => ({
+        id: g,
+        _font: this.src,
+        advanceWidth: positions[i].advanceWidth,
+      })),
     }
   }
 
