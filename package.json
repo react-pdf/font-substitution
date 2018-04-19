@@ -1,11 +1,17 @@
 {
-  "name": "font-substitution",
+  "name": "@react-pdf/font-substitution",
+  "repository": "git@github.com:react-pdf/font-substitution.git",
+  "author": "Diego Muracciole <diegomuracciole@gmail.com>",
   "version": "1.0.0",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel ./src --out-dir ./dist"
+    "build": "babel ./src --out-dir ./dist",
+    "prepublish": "npm run build"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
