@@ -2,7 +2,7 @@
   "name": "@react-pdf/font-substitution",
   "repository": "git@github.com:react-pdf/font-substitution.git",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
