@@ -1,4 +1,4 @@
-import { Run } from 'textkit';
+import { Run } from '@react-pdf/textkit';
 import StandardFont from './standardFont';
 
 export default class FontSubstitutionEngine {

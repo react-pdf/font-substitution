@@ -29,5 +29,8 @@
   },
   "peerDependencies": {
     "pdfkit": "latest"
+  },
+  "dependencies": {
+    "@react-pdf/textkit": "^0.1.0"
   }
 }
