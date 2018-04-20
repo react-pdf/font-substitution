@@ -2,7 +2,7 @@
   "name": "@react-pdf/font-substitution",
   "repository": "git@github.com:react-pdf/font-substitution.git",
   "author": "Diego Muracciole <diegomuracciole@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -27,10 +27,8 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1"
   },
-  "peerDependencies": {
-    "pdfkit": "latest"
-  },
   "dependencies": {
+    "@react-pdf/pdfkit": "0.8.7",
     "@react-pdf/textkit": "^0.1.0"
   }
 }
