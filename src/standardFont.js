@@ -33,7 +33,7 @@ class StandardFont {
   }
 
   get descent() {
-    return -this.src.descender;
+    return this.src.descender;
   }
 
   get lineGap() {
