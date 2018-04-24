@@ -27,8 +27,8 @@
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1"
   },
-  "dependencies": {
-    "@react-pdf/pdfkit": "0.8.7",
-    "@react-pdf/textkit": "^0.1.0"
+  "peerDependencies": {
+    "@react-pdf/pdfkit": "latest",
+    "@react-pdf/textkit": "latest"
   }
 }
