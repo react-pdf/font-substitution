@@ -28,7 +28,7 @@
     "prettier": "^1.11.1"
   },
   "peerDependencies": {
-    "@react-pdf/pdfkit": "latest",
+    "pdfkit": "latest",
     "@react-pdf/textkit": "latest"
   }
 }
