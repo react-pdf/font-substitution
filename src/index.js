@@ -2,6 +2,18 @@ import StandardFont from './standardFont';
 
 export default () => ({ Run }) => (
   class FontSubstitutionEngine {
+    constructor() {
+      this.fallbackFontInstance = null;
+    }
+
+    get fallbackFont() {
+      if (!this.fallbackFontInstance) {
+        this.fallbackFontInstance = new StandardFont('Helvetica');
+      }
+
+      return this.fallbackFontInstance;
+    }
+
     getRuns(string, runs) {
       const res = [];
       let lastFont = null;
@@ -23,9 +35,14 @@ export default () => ({ Run }) => (
         }
 
         for (const char of string.slice(run.start, run.end)) {
-          let font = null;
+          const codePoint = char.codePointAt();
 
-          font = defaultFont;
+          let font = null;
+          if (defaultFont.hasGlyphForCodePoint(codePoint)) {
+            font = defaultFont;
+          } else {
+            font = this.fallbackFont;
+          }
 
           if (font !== lastFont) {
             if (lastFont) {

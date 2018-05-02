@@ -21,11 +21,15 @@ class StandardFont {
   }
 
   glyphForCodePoint(codePoint) {
-    return this.getGlyph({ id:codePoint, _font: this.src, advanceWidth: 400 });
+    return this.getGlyph({ id: codePoint, _font: this.src, advanceWidth: 400 });
   }
 
   getGlyph(glyph) {
     return glyph;
+  }
+
+  hasGlyphForCodePoint(codePoint) {
+    return this.src.font.characterToGlyph(codePoint) !== '.notdef';
   }
 
   get ascent() {
